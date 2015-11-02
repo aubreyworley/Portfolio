@@ -1,125 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <link rel="stylesheet" href="custom.css">
-      <script type="text/javascript" src="script.js"></script>
-      <title>WDI Portfolio</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
+  <script type="text/javascript" src="script.js"></script>
+  <title>WDI Portfolio</title>
 </head>
 
-  <body>
-     <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Background</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
-              <li><a href="../navbar-static-top/">Projects</a></li>
-              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-  <div class="jumbotron text-center">
+<body>
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../navbar-static-top/">Projects</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container-fluid -->
+</nav>
+<div class="jumbotron text-center">
   <h1>Aubrey's WDI Portfolio
   </h1>
   <p>Welcome to my website of projects :) 
-    
-     </p>
+  </p>
 </div>
-  <div class="container">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6"> 
+      <h1>Project 1</h1>
+      <p>Bikes</p>
+      <a href="#" class="thumbnail">
+        <img src="..." alt="...">
+      </a> 
+    </div>
+    <div class="col-sm-6">
+      <h1>Project 2</h1>
+      <p>Books</p>
+      <a href="#" class="thumbnail">
+        <img src="..." alt="...">
+      </a> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">  
+      <h1>Project 3</h1>
+      <p>Mountains</p>
+      <a href="#" class="thumbnail">
+        <img src="..." alt="...">
+      </a> 
+    </div>
+    <div class="col-sm-6">
+      <h1>Project 4</h1>
+      <p>Travel</p>
+      <a href="#" class="thumbnail">
+        <img src="..." alt="...">
+      </a> 
+    </div>
+  </div>
 
-    <div class="row">
-      <div class="col-sm-6"> 
-        <h1>Project 1</h1>
-        <p>Bikes</p>
-        <a href="#" class="thumbnail">
-      <img src="..." alt="...">
-      </a> 
-      </div>
-      <div class="col-sm-6">
-        <h1>Project 2</h1>
-        <p>Books</p>
-         <a href="#" class="thumbnail">
-      <img src="..." alt="...">
-      </a> 
+  <form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+      <label for="name" class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
       </div>
     </div>
-   <div class="row">
-      <div class="col-sm-6">  
-        <h1>Project 3</h1>
-        <p>Mountains</p>
-          <a href="#" class="thumbnail">
-      <img src="..." alt="...">
-      </a> 
+    <div class="form-group">
+      <label for="email" class="col-sm-2 control-label">Email</label>
+      <div class="col-sm-4">
+        <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
       </div>
-      <div class="col-sm-6">
-        <h1>Project 4</h1>
-        <p>Travel</p>
-          <a href="#" class="thumbnail">
-      <img src="..." alt="...">
-      </a> 
+    </div>
+    <div class="form-group">
+      <label for="message" class="col-sm-2 control-label">Message</label>
+      <div class="col-sm-4">
+        <textarea class="form-control" rows="4" name="message"></textarea>
       </div>
     </div>
 
-    <form class="form-horizontal" role="form" method="post" action="index.php">
-    <div class="form-group">
-        <label for="name" class="col-sm-2 control-label">Name</label>
-        <div class="col-sm-4">
-            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-        </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-4 col-sm-offset-2">
+      <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
     </div>
-    <div class="form-group">
-        <label for="email" class="col-sm-2 control-label">Email</label>
-        <div class="col-sm-4">
-            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-        </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-4 col-sm-offset-2">
     </div>
-    <div class="form-group">
-        <label for="message" class="col-sm-2 control-label">Message</label>
-        <div class="col-sm-4">
-            <textarea class="form-control" rows="4" name="message"></textarea>
-        </div>
-    </div>
-  
-    </div>
-    <div class="form-group">
-        <div class="col-sm-4 col-sm-offset-2">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-4 col-sm-offset-2">
-            <! Will be used to display an alert to the user>
-        </div>
-    </div>
+  </div>
 </form>
 
 </body>
